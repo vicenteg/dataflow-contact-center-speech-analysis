@@ -1,0 +1,23 @@
+{
+  "name": "Speech Analysis Job",
+  "description": "An Apache Beam streaming pipeline that processes audio files for sentiment.",
+  "parameters": [
+    {
+      "name": "input_topic",
+      "label": "Pub/Sub input topic.",
+      "helpText": "Pub/Sub topic to read from.",
+      "regexes": [
+        "projects\/[-_a-zA-Z]+\/topics\/[-_a-zA-Z]+"
+      ]
+    },
+    {
+      "name": "output_bigquery",
+      "label": "BigQuery output table",
+      "helpText": "BigQuery table spec to write to, in the form 'project:dataset.table'.",
+      "isOptional": false,
+      "regexes": [
+        "[^:]+:[^.]+[.].+"
+      ]
+    }
+  ]
+}
