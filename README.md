@@ -25,9 +25,13 @@ The process follows:
 4. The Cloud Function then sends the job ID from Cloud Speech-to-Text with additional metadata to Cloud Pub/Sub
 5. The Cloud Dataflow job enriches the data and writes to BigQuery
 
-To Learn More visit [Visualize speech data with Speech Analysis Framework](hhttps://cloud.google.com/solutions/visualize-speech-data-with-framework)
+To Learn More visit [Visualize speech data with Speech Analysis Framework](https://cloud.google.com/solutions/visualize-speech-data-with-framework)
 
-## How to install the Speech Analysis Framework
+## How to install the Speech Analysis Framework with Terraform
+
+See the [terraform README](terraform/README.md).
+
+## How to install the Speech Analysis Framework manually
 
 1. [Install the Google Cloud SDK](https://cloud.google.com/sdk/install)
 
